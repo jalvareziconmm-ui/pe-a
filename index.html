@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peña Manager</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🍻</div>
+        <div>
+          <h1>Peña Manager</h1>
+          <span>Zona de cachondeo serio</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-section="dashboard">Dashboard</button>
+        <button class="nav-item" data-section="members">Miembros</button>
+        <button class="nav-item" data-section="activities">Actividades</button>
+        <button class="nav-item" data-section="challenges">Retos</button>
+        <button class="nav-item" data-section="ranking">Ranking</button>
+        <button class="nav-item" data-section="moments">Momentos</button>
+        <button class="nav-item" data-section="bets">Porras</button>
+        <button class="nav-item" data-section="settings">Configuración</button>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <div>
+          <h2 id="page-title">Dashboard</h2>
+          <p id="page-subtitle">Resumen general de la peña</p>
+        </div>
+
+        <button class="primary-btn" id="refresh-btn">Actualizar</button>
+      </header>
+
+      <section id="content" class="content"></section>
+
+    </main>
+
+  </div>
+
+		<script src="config.js?v=1"></script>
+		<script src="app.js?v=1"></script>
+</body>
+</html>
